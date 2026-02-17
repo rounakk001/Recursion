@@ -2,9 +2,9 @@ class Solution {
 
     public boolean isStrictlyPalindromic(int n) {
         
-        for(int base = 2; base <= n - 2; base++) {
+        for(int i = 2; i <= n - 2;i++) {
             
-            String converted = convertToBase(n, base);
+            String converted = funct(n,i);
             
             if(!isPalindrome(converted)) {
                 return false;
@@ -15,7 +15,7 @@ class Solution {
     }
     
     
-    private String convertToBase(int num, int base) {
+    private String funct(int num, int base) {
         StringBuilder sb = new StringBuilder();
         
         while(num > 0) {
