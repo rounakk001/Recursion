@@ -28,8 +28,8 @@ class Solution {
 
         if(n==0)
         return false;
-        if(word.length()==0)
-        return false;
+        // if(word.length()==0)
+        // return false;
 
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
